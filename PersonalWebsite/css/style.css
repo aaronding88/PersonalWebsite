@@ -4,9 +4,10 @@ body {
 .intro {
 	font-family: 'Titillium Web', sans-serif;
 	font-size: 5em;
-	color: #FFFF99;
+	color:#FFEEC6;
+	text-shadow: white;
 	text-align: center;
-	padding: 40% 0 0;
+	padding: 20% 0 0;
 
     -webkit-animation: wait 3s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: wait 3s; /* Firefox < 16 */
@@ -20,7 +21,6 @@ body {
 	font-size: 2em;
 	color: white;
 	text-align: center;
-	padding: 10% 0 40%;
 
     -webkit-animation: wait 6s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: wait 6s; /* Firefox < 16 */
@@ -42,7 +42,8 @@ h1 {
 	font-family: 'Titillium Web', sans-serif;
 	font-size: 36px;
 	text-align: center;
-	padding: 10px 0 10px
+	padding-top: 5%;
+	padding-bottom: 5%;
 }
 
 p {
@@ -52,7 +53,10 @@ p {
 
 footer {
 	background-color: #FFF;
+	color: #999;
 	text-align: center;	
+	padding-top: 1%;
+	padding-bottom: 1%;
 }
 
 @keyframes fadein {
