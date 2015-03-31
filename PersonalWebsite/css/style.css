@@ -1,13 +1,76 @@
 body {
-	background-color: black;	
+	background-color: black;
+    position: relative;
 }
+
+img {
+    max-height: 500px;
+}
+
+/** Header Navigation **/
+header .navbar {
+    padding: 30px 0;
+}
+
+header .navbar-default {
+    background-color: transparent;
+    border: none;
+}
+
+header .navbar-default .navbar-nav a {
+    color: white;
+    padding: 5px 8px;
+}
+
+header .navbar-default .navbar-nav a:hover {
+    color: deepskyblue;
+}
+
+header .navbar-default .navbar-nav .active a {
+    color: deepskyblue;
+    font-weight:700;
+    color: deepskyblue;
+    background: transparent;
+    border-bottom: 4px solid deepskyblue;
+}
+
+header .navbar-default .navbar-nav .active a:hover {
+    color: red;
+}
+
+/** NavBar Brand **/
+
+header .navbar-brand {
+    background: url(../img/NameBanner.png);
+    background-repeat: no-repeat;
+    background-position: 15px 0;
+    height: auto;
+}
+
+/** NavBar Toggle **/
+
+header .navbar-toggle {
+    background-color: lightblue;
+}
+
+header .navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+@media only screen
+and (max-width: 786px) {
+    header .navbar-collapse.in {
+        background-color: rgba(255,255,255,0.5);
+    }   
+}
+
+/** Introduction **/
 .intro {
 	font-family: 'Titillium Web', sans-serif;
 	font-size: 5em;
 	color:#FFEEC6;
 	text-shadow: white;
 	text-align: center;
-	padding: 20% 0 0;
 
     -webkit-animation: wait 3s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: wait 3s; /* Firefox < 16 */
@@ -34,6 +97,11 @@ body {
 	background-size: cover;
 }
 
+/** Content **/
+.content {
+    padding: 0px 0;
+}
+
 .fontChange {
 	font-family: 'Play', sans-serif;	
 }
@@ -57,6 +125,10 @@ footer {
 	text-align: center;	
 	padding-top: 1%;
 	padding-bottom: 1%;
+}
+
+.page {
+    padding: 50px 0;
 }
 
 @keyframes fadein {
