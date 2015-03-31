@@ -31,9 +31,11 @@
           
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html">Home</a>
+                    <li><a href="#aboutMe">About Me</a>
                     </li>
-                    <li><a href="pregame.html">Thruster Alpha</a>
+                    <li><a href="#currentProject">Current Project: Thruster!</a>
+                    </li>
+                    <li><a href="#contact">Contact Me</a>
                     </li>
                 </ul>
             </div> <!--collapse navbar-collapse navbar-ex1-collapse-->
@@ -44,9 +46,9 @@
     <!-- Carousel slider, with the ID of main. Contains the images. Bootstrap div classes control functionality. -->
     <div class="carousel slide" data-ride="carousel" id="main">
         <div class="carousel-inner">
-            <div class="item active"><img src="img/mainBanner.png" alt="Main Banner"></div>
-            <div class="item"><img src="img/iceplanet.png" alt="Main Banner"></div>
-            <div class="item"><img src="img/_DSC0084.JPG" alt="Main Banner"></div>
+            <div class="item active"><img src="img/mainBanner.png" alt="Banner_01" class="img-responsive center-block" style="margin:0 auto; max-height:1000px;"></div>
+            <div class="item"><img src="img/NameBanner.png" alt="Banner_02" class="img-responsive center-block" style="margin:0 auto; max-height:1000px;" ></div>
+            <div class="item"><img src="img/_DSC0084.JPG" alt="Banner_03" class="img-responsive center-block" style="margin:0 auto; max-height:1000px;"></div>
         </div> <!--carousel-inner-->
         
         <!--Carousel user navigation controls, utilizing an icon. Data-slide refers to JavaScript commands-->
@@ -57,56 +59,106 @@
             <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
     </div> <!--carousel slide-->
-    
-    
     </header>
 
     <!-- About Me section, which contains only one container, plus header. -->
-	<div class="container-fluid" style="background-color:#CAFFFF;">
+	<div class="page container-fluid" id="aboutMe">
         <h1>
         	About Me!
         </h1>
         <article>
             <div class="content container">
                 <p> Oh, hello! I didn't see you there. You seem to have stumbled across Aaron Ding's personal website. It may not look like much right now, but it is definitely heading towards someplace nice. I update every few days days, so check back for updates! In the meantime, check out some of my projects, and if any seem interesting to you, I'd love to collaborate.</p>
-            </div>
+            </div> <!--content container-->
         </article>
-    </div>
+    </div> <!--page container-fluid-->
     
 <!-- Project Section. This will contain two stacking containers, one with information, another with images. May go into Multiple Rows -->
-	<div class="container-fluid" style="background-color: black; background-image:url(img/hdSpace.jpg); color: white;">
+	<div class="page container-fluid" id="currentProject">
         <h1>
         	Current Project: Thruster
         </h1>
-        
-        <article>
-            <div class="row">
-                <div class="col-md-6"  style="padding-left: 5%; padding-bottom: 5%;">
-                    <p> Thruster started off as a practice game for me, and it's grown into a passion project of mine for the past many months. It is half learning experience, half professional project. It is a basic bullet dodge game that uses only one input &#40;left click/touch&#41;, which thrusts the character towards the direction of your input. However, the thruster exhaust that is created isn't just your 1980 Chevy's exhaust; it is a high-density super-charged ionic discharge &#40;Think Tesla! Just kidding&#41;. It can damage enemies, reflect projectiles, and mess up all kinds of bad-guy mechanics. So, the player must decide whether he/she wants to use the thrust defensively, or offensively.</p>
-                    <p> Image below is a sprite of one of the planets, but in the future, you will see screenshots of the game.</p>
-                </div>
+        <div class="section row">
+            <div class="content col-sm-6">
+                <h2> What it is:</h2>
+                <p> Thruster is a 2D sidescrolling bullet-dodge game. The goal is to survive as long as you can, and the game gets
+                progressively more difficult the longer you stay alive. The game generates different "events" that the player has to
+                tackle, so no one playthrough will be exactly the same, which makes each playthrough interesting and robust.
+                It is powered by Unity and C#.</p>
+            </div> <!--description col-md-6-->
 
-                <div class="col-md-6">
-                    <img src="img/iceplanet.png" alt="Ice Planet Example" style="max-width:100%;">
-                </div>
-            </div>
-        </article>
-    </div>
+            <div class="imgBox col-sm-6">
+                <img src="img/iceplanet.png" alt="Ice Planet Example" class="img-responsive left-block" style="max-width:100%; margin:0 auto;">
+            </div> <!--imgBox col-md-6-->
+        </div> <!--row-->
+        
+        <div class="section row">
+            <div class="imgBox col-sm-6">
+                <img src="img/mainBanner.png" alt="Test Banner" class="img-responsive left-block" style="max-width:100%; margin:0 auto;">
+            </div> <!--imgBox col-md-6-->
+
+            <div class="content col-sm-6">
+                <h2> Why spend time on it?</h2>
+                <p> Thruster started off as a practice project, in an effort for me to get more familiar with Unity and C#. However,
+                as I experimented with designs and executions, I slowly began to earnestly enjoy the gameplay. The playstyle was simple
+                to understand, but difficult to master. The mechanics of play is somewhat unique, yet was still familiar.</p>
+            </div> <!--content col-md-6-->
+        </div> <!--row-->
+        
+        <div class="section row">
+            <div class="content col-sm-6">
+                <h2> So, what does it play like?</h2>
+                <p> The game only takes one input, which for now is left mouse click. It then pushes you towards your cursor. Enemy
+                projectiles are slow, so you'll be able to navigate around the screen dodging projectiles and harmful objects. What's
+                more interesting is that the resulting exhaust does some interesting effects, like reflect bullets, disable missiles,
+                and more!</p>
+            </div> <!--description col-md-6-->
+
+            <div class="imgBox col-sm-6">
+                <img src="img/iceplanet.png" alt="Ice Planet Example" class="img-responsive left-block" style="max-width:100%; margin:0 auto;">
+            </div> <!--imgBox col-md-6-->
+        </div> <!--row-->
+            <div class="content container">
+                <h2> How are things, then? </h2>
+                <p> Right now, the game is far from complete. While the basic gameplay is there, it's not exactly <em>fun</em> yet.
+                    Currently, I'm working on:</p>
+                <nav>
+                    <ul>
+                        <li>A couple more Events.</li>
+                        <li>AI-controlled level design.</li>
+                    </ul>
+                </nav>
+                <p> I still plan on working on:</p>
+                <nav>
+                    <ul>
+                        <li>Points/currency system for purchasing items/events.</li>
+                        <li>Beautiful original art, animation, &amp; music.</li>
+                        <li>Implementation for mobile devices.</li>
+                    </ul>
+                </nav>
+                <p> If you're interested in playing a work-in-progress, please visit the Alpha page <a href="http://aaronsidading.com/pregame.html">here!</a> 
+                    If you have any suggestions, or are interesting in collaborating, feel free contact me through <a href="mailto:aaronding88@gmail.com">email</a>
+                    or through the contact sheet below.</p>
+            </div> <!--content col-xs-12-->
+    </div> <!--page container-fluid-->
     
 <!-- Project Section. This will contain two stacking containers, one with information, another with images. May go into Multiple Rows -->
-	<div class="container-fluid" style="background-color: #FFAC75;">
+	<div class="page container" id="contact">
         <h1>
         	Contact Me!
         </h1>
-        <div class="container"  style="padding-bottom: 5%;">
-            <p> Contact section coming soon! If you have any questions/comments, please email me <a href="mailto:aaronding88@gmail.com">here!</a></p>
-        </div>
+        <article>
+            <div class="content container">
+                <p> Contact section coming soon! If you have any questions/comments, 
+                    please email me <a href="mailto:aaronding88@gmail.com">here!</a></p>
+            </div>
+        </article>
     </div>
     
 <!-- Closing Footer of the Page -->
     <footer>
         <div class="container-fluid">
-	        <p style="padding-top: 2%; padding-bottom: 2%;">Copyright Aaron Sida Ding. If you would like to borrow elements, just let me know!</p>
+	        <p>Copyright Aaron Sida Ding. If you would like to borrow elements, just let me know!</p>
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
