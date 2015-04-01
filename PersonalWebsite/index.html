@@ -25,12 +25,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Under Construction!</a>
+                <a class="navbar-brand" href="#main"> 
+                    <h1>Aaron Ding</h1>
+                </a>
             </div> <!--navbar-header-->
 
           
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#main">Featured</a>
+                    </li>
                     <li><a href="#aboutMe">About Me</a>
                     </li>
                     <li><a href="#currentProject">Current Project: Thruster!</a>
@@ -46,9 +50,9 @@
     <!-- Carousel slider, with the ID of main. Contains the images. Bootstrap div classes control functionality. -->
     <div class="carousel slide" data-ride="carousel" id="main">
         <div class="carousel-inner">
-            <div class="item active"><img src="img/mainBanner.png" alt="Banner_01" class="img-responsive center-block" style="margin:0 auto; max-height:1000px;"></div>
-            <div class="item"><img src="img/NameBanner.png" alt="Banner_02" class="img-responsive center-block" style="margin:0 auto; max-height:1000px;" ></div>
-            <div class="item"><img src="img/_DSC0084.JPG" alt="Banner_03" class="img-responsive center-block" style="margin:0 auto; max-height:1000px;"></div>
+            <div class="item active"><img src="img/FeaturedBanner_01.jpg" alt="Banner_01"></div>
+            <div class="item"><img src="img/FeaturedBanner_02.jpg" alt="Banner_02" ></div>
+            <div class="item"><img src="img/FeaturedBanner_03.jpg" alt="Banner_03"></div>
         </div> <!--carousel-inner-->
         
         <!--Carousel user navigation controls, utilizing an icon. Data-slide refers to JavaScript commands-->
@@ -62,19 +66,21 @@
     </header>
 
     <!-- About Me section, which contains only one container, plus header. -->
+    <section>
 	<div class="page container-fluid" id="aboutMe">
         <h1>
         	About Me!
         </h1>
-        <article>
-            <div class="content container">
-                <p> Oh, hello! I didn't see you there. You seem to have stumbled across Aaron Ding's personal website. It may not look like much right now, but it is definitely heading towards someplace nice. I update every few days days, so check back for updates! In the meantime, check out some of my projects, and if any seem interesting to you, I'd love to collaborate.</p>
-            </div> <!--content container-->
-        </article>
+        <div class="content container">
+            <p> Oh, hello! I didn't see you there. You seem to have stumbled across Aaron Ding's personal website. It may not look like much right now, but it is definitely heading towards someplace nice. I update every few days days, so check back for updates! In the meantime, check out some of my projects, and if any seem interesting to you, I'd love to collaborate.</p>
+        </div> <!--content container-->
     </div> <!--page container-fluid-->
+    </section> <!--End of About Me Section-->
+    
     
 <!-- Project Section. This will contain two stacking containers, one with information, another with images. May go into Multiple Rows -->
-	<div class="page container-fluid" id="currentProject">
+	<section>
+    <div class="page container-fluid" id="currentProject">
         <h1>
         	Current Project: Thruster
         </h1>
@@ -120,16 +126,14 @@
         </div> <!--row-->
             <div class="content container">
                 <h2> How are things, then? </h2>
-                <p> Right now, the game is far from complete. While the basic gameplay is there, it's not exactly <em>fun</em> yet.
-                    Currently, I'm working on:</p>
+                <p> Right now, the game is far from complete. While the basic gameplay is there, it's not exactly <em>fun</em> yet.</p>
                 <nav>
+                    <h3> Currently, I'm working on: </h3>
                     <ul>
                         <li>A couple more Events.</li>
                         <li>AI-controlled level design.</li>
                     </ul>
-                </nav>
-                <p> I still plan on working on:</p>
-                <nav>
+                <h3> I still plan on working on:</h3>
                     <ul>
                         <li>Points/currency system for purchasing items/events.</li>
                         <li>Beautiful original art, animation, &amp; music.</li>
@@ -141,20 +145,21 @@
                     or through the contact sheet below.</p>
             </div> <!--content col-xs-12-->
     </div> <!--page container-fluid-->
+    </section> <!--End of Project Section-->
     
-<!-- Project Section. This will contain two stacking containers, one with information, another with images. May go into Multiple Rows -->
+    
+<!-- Contact section. Should include a fillable form. -->
+    <section>
 	<div class="page container" id="contact">
         <h1>
         	Contact Me!
         </h1>
-        <article>
-            <div class="content container">
-                <p> Contact section coming soon! If you have any questions/comments, 
-                    please email me <a href="mailto:aaronding88@gmail.com">here!</a></p>
-            </div>
-        </article>
+        <div class="content container">
+            <p> Contact section coming soon! If you have any questions/comments, 
+                please email me <a href="mailto:aaronding88@gmail.com">here!</a></p>
+        </div>
     </div>
-    
+    </section> <!--End of Contact Section-->
 <!-- Closing Footer of the Page -->
     <footer>
         <div class="container-fluid">
