@@ -19,46 +19,68 @@ header .navbar {
 }
 
 header .navbar-default {
-    background-color: rgba(50,0,0,0.4);
+    background-color: transparent;
     border: none;
 }
 
 header .navbar-default .navbar-nav a {
-    color: white;
+    color: black;
     padding: 10px 15px;
 }
 
 header .navbar-default .navbar-nav a:hover {
-    color: deepskyblue;
+    color: maroon;
 }
 
 header .navbar-default .navbar-nav .active a {
     font-weight:400;
-    color: deepskyblue;
+    color: maroon;
     background: transparent;
-    border-bottom: 4px solid deepskyblue;
+    border-bottom: 4px solid maroon;
     text-shadow: none;
 }
 
 header .navbar-default .navbar-nav .active a:hover {
-    color: white;
+    color: black;
     background: transparent;
     text-shadow: none;
 }
 
-/** Mobile NavBar Brand **/
+/** NavBar Brand **/
 
 header .navbar-brand {
-    display: block;
-    margin-left: 10px;
+    margin-top: -15px;
+    padding-left: 50px;
+}
+
+header .nav.navbar-nav.navbar-right {
+   background: url(../img/NavBG.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
 }
 
 header .navbar-brand h1 {
-    display: none;
     color: beige;
     font-family: 'Satisfy', cursive;
     font-size: 2em;
+    text-align: center;
+    
+    background: url(../img/logoBG.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-left: 10px;
+    padding-right: 10px;
 }
+
+header .navbar-brand span.subhead {
+    display: block;
+    font-family: 'Play', sans-serif;
+    font-size: .6em;
+    font-weight: 100;
+}
+
 header .navbar-brand p {
     color: white;
 	font-family: 'Titillium Web', sans-serif;
@@ -68,23 +90,27 @@ header .navbar-brand p {
 /** Mobile NavBar Toggle **/
 
 header .navbar-toggle {
-    background-color: lightblue;
+    background-color: maroon;
 }
 
 header .navbar-default .navbar-toggle .icon-bar {
-    background-color: white;
+    background-color: beige;
 }
 
 @media only screen
 and (max-width: 786px) {
     header .navbar-collapse.in {
         background-color: rgba(255,255,255,0.5);
-    }   
+    }  
+    header .nav.navbar-nav.navbar-right {
+    background: none;
+}
+    
 }
 
 /** NavBar inBody **/
 header .inBody {
-    background: rgba(50,0,0,1);
+    background: rgba(100,0,0,1);
 }
 
 header .navbar.inBody {
@@ -95,6 +121,14 @@ header .navbar.inBody {
 header .navbar.inBody h1 {
     display: block;
     font-size: 1.5em;
+    background: none;
+}
+header .inBody .navbar-brand {
+    margin-top: 0px;
+}
+
+header .inBody .navbar-brand span.subhead {
+  display: none;
 }
 
 header .navbar.inBody .navbar-nav {
@@ -108,7 +142,7 @@ header .navbar.inBody .navbar-nav {
 .content {
     vertical-align: middle;
     margin: 0 auto;
-    padding: 0 5%;
+    padding: 0 2%;
 }
 
 .fontChange {
@@ -119,10 +153,15 @@ header .navbar.inBody .navbar-nav {
 
 .page h1 {
 	font-family: 'Titillium Web', sans-serif;
-	font-size: 3em;
+	font-size: 3.5em;
 	text-align: center;
-	padding-top: 5%;
-	padding-bottom: 5%;
+    color: steelblue;
+    padding: 10px;
+    margin-bottom: 50px;
+    background: url("../img/HeaderBanner.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .page h2 {
@@ -139,9 +178,15 @@ header .navbar.inBody .navbar-nav {
     margin: 0 auto;
 }
 
+/** Content: About Me **/
+#aboutMe {
+    background: url(../img/ivory_paper_texture.jpg);
+    background-color: antiquewhite;
+}
+
 /** Content: Current Project **/
 #currentProject {
-    background-color: antiquewhite;
+    background-color: white;
 }
 
 /** Footer **/
