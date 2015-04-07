@@ -11,7 +11,7 @@
 	 	<link href="css/style.css" rel="stylesheet">
 		<link href='http://fonts.googleapis.com/css?family=Titillium+Web:300' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Poiret+One|Abril+Fatface' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Poiret+One|Abril+Fatface|Fugaz+One' rel='stylesheet' type='text/css'>
     </head>
 
 <body>
@@ -38,7 +38,7 @@
                     </li>
                     <li><a href="#aboutMe">About Me</a>
                     </li>
-                    <li><a href="#currentProject">Current Project: Thruster!</a>
+                    <li><a href="#Projects">Projects</a>
                     </li>
                     <li><a href="#contact">Contact Me</a>
                     </li>
@@ -53,8 +53,8 @@
         <ol class="carousel-indicators">
         </ol>
         
-        <div class="carousel-inner">
-            <div class="item active"><img src="img/FeaturedBanner_01.jpg" alt="Banner_01"></div>
+        <div class="carousel-inner fullheight">
+            <div class="item active"><img class="BannerImages" src="img/FeaturedBanner_01.jpg" alt="Banner_01"></div>
             <div class="item"><img src="img/FeaturedBanner_02.jpg" alt="Banner_02" ></div>
             <div class="item"><img src="img/FeaturedBanner_03.jpg" alt="Banner_03"></div>
         </div> <!--carousel-inner-->
@@ -71,88 +71,44 @@
 
     <!-- About Me section, which contains only one container, plus header. -->
     <section>
-	<div class="page container-fluid" id="aboutMe">       
-        <h1>
-        	About Me!
-        </h1>
-        <div class="content container">
-            <p> Oh, hello! I didn't see you there. You seem to have stumbled across Aaron Ding's personal website. It may not look like much right now, but it is definitely heading towards someplace nice. I update every few days days, so check back for updates! In the meantime, check out some of my projects, and if any seem interesting to you, I'd love to collaborate.</p>
-        </div> <!--content container-->
-    </div> <!--page container-fluid-->
+	<div class="page container-fluid fullheight" id="aboutMe">
+        <div class="container" id="about-me-banner">
+            <h1>About Me!</h1>
+            <p> Hello there. My name is Aaron Ding, and I'm glad you've stopped by.
+                While I would love to get into detail about me, I still have some
+                construction to manage on my website right now. Good luck!</p>
+        </div>
+    </div> <!--Container-fluid: About Me-->
+    
     </section> <!--End of About Me Section-->
     
     
 <!-- Project Section. This will contain two stacking containers, one with information, another with images. May go into Multiple Rows -->
 	<section>
-    <div class="page container-fluid" id="currentProject">
-        <h1>
-        	Current Project: Thruster
-        </h1>
-        <div class="section row">
-            <div class="content col-sm-6">
-                <h2> What it is:</h2>
-                <p> Thruster is a 2D sidescrolling bullet-dodge game. The goal is to survive as long as you can, and the game gets
-                progressively more difficult the longer you stay alive. The game generates different "events" that the player has to
-                tackle, so no one playthrough will be exactly the same, which makes each playthrough interesting and robust.
-                It is powered by Unity and C#.</p>
-            </div> <!--description col-md-6-->
+    <div class="page container-fluid" id="Projects">
+        <row>
+            <a href="https://www.aaronsidading.com/pregame.html">
+                <div class="col-md-4" id="Project01">
 
-            <div class="imgBox col-sm-6">
-                <img src="img/iceplanet.png" alt="Ice Planet Example" class="img-responsive left-block" style="max-width:100%; margin:0 auto;">
-            </div> <!--imgBox col-md-6-->
-        </div> <!--row-->
-        
-        <div class="section row">
-            <div class="imgBox col-sm-6">
-                <img src="img/mainBanner.png" alt="Test Banner" class="img-responsive left-block" style="max-width:100%; margin:0 auto;">
-            </div> <!--imgBox col-md-6-->
+                </div>
+            </a>
+            
+            <a href="#">
+                <div class="col-md-4" id="Project02">
 
-            <div class="content col-sm-6">
-                <h2> Why spend time on it?</h2>
-                <p> Thruster started off as a practice project, in an effort for me to get more familiar with Unity and C#. However,
-                as I experimented with designs and executions, I slowly began to earnestly enjoy the gameplay. The playstyle was simple
-                to understand, but difficult to master. The mechanics of play is somewhat unique, yet was still familiar.</p>
-            </div> <!--content col-md-6-->
-        </div> <!--row-->
-        
-        <div class="section row">
-            <div class="content col-sm-6">
-                <h2> So, what does it play like?</h2>
-                <p> The game only takes one input, which for now is left mouse click. It then pushes you towards your cursor. Enemy
-                projectiles are slow, so you'll be able to navigate around the screen dodging projectiles and harmful objects. What's
-                more interesting is that the resulting exhaust does some interesting effects, like reflect bullets, disable missiles,
-                and more!</p>
-            </div> <!--description col-md-6-->
+                </div>
+            </a>
+            
+            <a href="#">
+                <div class="col-md-4" id="Project03">
 
-            <div class="imgBox col-sm-6">
-                <img src="img/iceplanet.png" alt="Ice Planet Example" class="img-responsive left-block" style="max-width:100%; margin:0 auto;">
-            </div> <!--imgBox col-md-6-->
-        </div> <!--row-->
-            <div class="content container">
-                <h2> How are things, then? </h2>
-                <p> Right now, the game is far from complete. While the basic gameplay is there, it's not exactly <em>fun</em> yet.</p>
-                <nav>
-                    <h3> Currently, I'm working on: </h3>
-                    <ul>
-                        <li>A couple more Events.</li>
-                        <li>AI-controlled level design.</li>
-                    </ul>
-                <h3> I still plan on working on:</h3>
-                    <ul>
-                        <li>Points/currency system for purchasing items/events.</li>
-                        <li>Beautiful original art, animation, &amp; music.</li>
-                        <li>Implementation for mobile devices.</li>
-                    </ul>
-                </nav>
-                <p> If you're interested in playing a work-in-progress, please visit the Alpha page <a href="http://aaronsidading.com/pregame.html">here!</a> 
-                    If you have any suggestions, or are interesting in collaborating, feel free contact me through <a href="mailto:aaronding88@gmail.com">email</a>
-                    or through the contact sheet below.</p>
-            </div> <!--content col-xs-12-->
+                </div>
+            </a>
+        </row>
     </div> <!--page container-fluid-->
     </section> <!--End of Project Section-->
     
-    
-<!-- Contact section. Should include a fillable form. -->
+    <!-- Contact section. Should include a fillable form. -->
     <section>
 	<div class="page container" id="contact">
         <h1>

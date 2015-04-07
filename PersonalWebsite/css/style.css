@@ -3,15 +3,16 @@
 /** Default CSS page **/
 
 body {
-    font-weight: 300;
+    font-weight: 700;
+    line-height: 1.75;
     font-size: 2em;
-    background: url("../img/ivory_paper_texture.jpg");
     position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
+
 
 /** Header Navigation **/
 header .navbar {
@@ -36,7 +37,7 @@ header .navbar-default .navbar-nav a:hover {
 }
 
 header .navbar-default .navbar-nav .active a {
-    font-weight:400;
+    font-weight:900;
     color: #E18942;
     background: transparent;
     border-bottom: 4px solid #E18942;
@@ -49,6 +50,9 @@ header .navbar-default .navbar-nav .active a:hover {
     text-shadow: none;
 }
 
+header img.BannerImages {
+    width:100%;
+}
 
 /** NavBar Brand **/
 
@@ -56,15 +60,7 @@ header .navbar-brand {
     margin-top: -15px;
     padding-left: 50px;
 }
-/*
 
-header .nav.navbar-nav.navbar-right {
-   background: url(../img/NavBG.png);
-    background-position:center;
-    background-repeat:no-repeat;
-    background-size: 100% 100%;
-}
-*/
 
 header .navbar-brand h1 {
     color: beige;
@@ -147,35 +143,46 @@ header .navbar.inBody .navbar-nav {
     padding-top: 10px;   
 }
 
-/** Still to be sorted **/
+/** Carousel Styling **/
+
+#main .item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Still to be sorted 
 .section {
     padding: 0 10%;   
 }
-.content {
-    vertical-align: middle;
-    margin: 15px auto;
-    padding: 0 2%;
-    background: rgba(255,255,255,0.8);
-}
+
 
 .fontChange {
 	font-family: 'Poiret One', cursive;
-}
+}*/
 
 /** Page Styling **/
 
+
 .page h1 {
-	font-family: 'Abril Fatface', cursive;
+    font-family: 'Fugaz One', cursive;
 	font-size: 3.5em;
 	text-align: center;
     color: goldenrod;
     padding: 10px;
     margin-bottom: 50px;
+    background-color: rgba(50,0,0,0.8);
+    border: solid 5px;
+    border-radius: 30px
 }
 
 .page h2 {
+    font-family: 'Abril Fatface', cursive;
     text-align: center;
     font-size: 2.5em;
+    padding: 25px;
 }
 
 .page p {
@@ -187,29 +194,76 @@ header .navbar.inBody .navbar-nav {
     margin: 0 auto;
 }
 
+img.content-example {
+    max-height: 600px;
+    margin: 0 auto;
+}
+
 /** Content: About Me **/
 #aboutMe {
-    padding-top: 0px;
-    background: url(../img/ivory_paper_texture.jpg);
-    background-color: antiquewhite;
+    background: url(../img/AboutBanner.png);
+    background-position: center 20px;
+    background-color: white;
+}
+#aboutMe a{
+    display: block;
+    width: 50px;
+    height: 50px;
 }
 
-/** Content: Current Project **/
-#currentProject {
-    padding-top: 0px;
-    background-image: linear-gradient(to bottom, black, skyblue);
-    border-bottom: url(../img/hdSpace.jpg);
+#aboutMe .content {
+    padding: 0 125px
 }
 
-#currentProject h3 {
-	font-family: 'Poiret One', cursive;
-    font-weight: 800;
+#about-me-banner
+{
+    padding-top: 30%;
 }
 
-#currentProject nav{
-    padding-left: 30px;
+#about-me-banner p{
+    display:none;
+    color: goldenrod;
+    padding: 10px 50px;
+    background-color: rgba(50,0,0,0.8);
+    border: solid 5px;
+    border-radius: 30px;
 }
 
+#about-me-banner.description-text {
+    padding-top: 20%;
+}
+
+#about-me-banner.description-text h1{
+    display: none;
+}
+
+#about-me-banner.description-text p{
+    padding: 5% 20%;
+    display: block;
+}
+
+/** Project Styling **/
+#Projects{
+    padding: 0;
+}
+
+#Project01 {
+    background: url("../img/hdSpace.jpg");
+    background-position: center center;
+    height: 500px;
+}
+
+#Project02 {
+    background: url("../img/iceplanet.png");
+    background-position: center center;
+    height: 500px;
+}
+
+#Project03 {
+    background: url("../img/_DSC0084.JPG");
+    background-position: center center;
+    height: 500px;
+}
 
 /** Footer **/
 footer {
