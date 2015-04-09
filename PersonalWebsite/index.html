@@ -73,11 +73,23 @@
     <section>
 	<div class="page container-fluid fullheight" id="aboutMe">
         <div class="container" id="about-me-banner">
-            <h1>About Me!</h1>
-            <p> Hello there. My name is Aaron Ding, and I'm glad you've stopped by.
-                While I would love to get into detail about me, I still have some
-                construction to manage on my website right now. Good luck!</p>
-        </div>
+            <div class="panel with-nav-tabs panel-default">
+                <div class="panel-heading">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#tab1default" data-toggle="tab">Default 1</a></li>
+                            <li><a href="#tab2default" data-toggle="tab">Default 2</a></li>
+                            <li><a href="#tab3default" data-toggle="tab">Default 3</a></li>
+                        </ul>
+                </div>
+                <div class="panel-body">
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="tab1default">Default 1</div>
+                        <div class="tab-pane fade" id="tab2default">Default 2</div>
+                        <div class="tab-pane fade" id="tab3default">Default 3</div>
+                    </div>
+                </div>
+            </div>
+        </div> <!--Container: about-me-banner-->  
     </div> <!--Container-fluid: About Me-->
     
     </section> <!--End of About Me Section-->
@@ -86,6 +98,7 @@
 <!-- Project Section. This will contain two stacking containers, one with information, another with images. May go into Multiple Rows -->
 	<section>
     <div class="page container-fluid" id="Projects">
+            <h1>Projects</h1>
         <row>
             <a href="https://www.aaronsidading.com/pregame.html">
                 <div class="col-md-4" id="Project01">
@@ -105,6 +118,15 @@
                 </div>
             </a>
         </row>
+        <div class="content container-fluid" id="Temp-Section">
+            <h2> Curious? Let's collaborate</h2>
+            <p> Projects are an amazing way for me to learn new languages,
+                workflows, and styles. I am ambitious with how many projects
+                I undertake, and how complex it can be. Consequently, I am always
+                enthusiastic about teaming up on current or new ideas. Feel free
+                to reach out to me through any means in the contact section.</p>
+        </div> <!--Container-fluid: End of Temp Section-->
+
     </div> <!--page container-fluid-->
     </section> <!--End of Project Section-->
     
@@ -115,14 +137,37 @@
         	Contact Me!
         </h1>
         <div class="content container">
-            <p> Contact section coming soon! If you have any questions/comments, 
-                please email me at <a href="mailto:aaronding88@gmail.com">aaronding88@gmail.com</a>!</p>
+            <p> Feedback is important to me. If you have any questions about projects
+                or how I did something, or just have comments, feel free to reach out
+                to me. Even if it's mean!</p>
         </div>
+        <div class="container" style="text-align: center;" id="contact-container">
+            <row class>
+                <a href="mailto:aaronding88@gmail.com">
+                    <div class="contact-method col-xs-4">
+                        <img src="img/emailIcon.png" alt="Email icon" style="height: 50px;">
+                        <p> Email </p>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile">
+                    <div class="contact-method col-xs-4">
+                        <img src="img/In-2C-66px-TM.png" alt="LinkedIn Link" style="height: 50px;">
+                        <p> LinkedIn </p>
+                    </div>
+                </a>
+                <div class="col-xs-4">
+                    <img src="img/phoneIcon.png" alt="Phone Icon" style="height: 50px;">
+                    <p> 916.531.2006 </p>
+                </div>
+            </row> <!--Row end-->
+        </div> <!--Container: Contact methods-->
     </div>
     </section> <!--End of Contact Section-->
 <!-- Closing Footer of the Page -->
     <footer>
         <div class="container-fluid">
+            <p> Coded by Aaron Sida Ding using HTML, CSS, Javascript.</p>
+            <p> Special thanks to Ray Villalobos of Lynda.com, and Bootstrap community</p>
 	        <p>Copyright Aaron Sida Ding. If you would like to borrow elements, just let me know!</p>
         </div>
     </footer>
