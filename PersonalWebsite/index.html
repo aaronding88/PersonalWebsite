@@ -71,9 +71,8 @@
 
     <!-- About Me section, which contains only one container, plus header. -->
     <section>
-	<div class="page container-fluid fullheight" id="aboutMe">
+	<div class="page container-fluid" id="aboutMe">
         <div class="container" id="about-me-banner">
-            <div class="panel with-nav-tabs panel-default">
                 <div class="panel-heading">
                         <div class="container-fluid">
                             <h1>About Me</h1>
@@ -90,13 +89,26 @@
                         </ul>
                 </div>
                 <div class="panel-body">
-                    <div class="tab-content">
-                        <div class="tab-pane fade" id="tab1default">Hi, I'm Aaron!</div>
-                        <div class="tab-pane fade" id="tab2default"> A handful. </div>
-                        <div class="tab-pane fade" id="tab3default"> Video games </div>
+                    <div class="tab-content" style="overflow:scroll;">
+                        <div class="scroll-box tab-pane fade" id="tab1default">
+                            <p> Welcome to my section of the internet.
+                                I'm an Asian American software developer with
+                                experience with media arts, game developement,
+                                music theatre, and front-end iOS and Web development. </p>
+                            <p> I wanted to create this webite for the purposes of 
+                                publicly displaying my projects and searching for potential
+                                partners in projects. However, feel free to contact me for
+                                any purpose! I'm always interested in chatting with new
+                                people.</p>
+                        </div>
+                        <div class="tab-pane fade" id="tab2default"> 
+                            <p>A handful.</p>
+                        </div>
+                        <div class="tab-pane fade" id="tab3default"> 
+                            <p>Video games.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
         </div> <!--Container: about-me-banner-->  
     </div> <!--Container-fluid: About Me-->
     
@@ -106,26 +118,82 @@
 <!-- Project Section. This will contain two stacking containers, one with information, another with images. May go into Multiple Rows -->
 	<section>
     <div class="page container-fluid" id="Projects">
-            <h1>Projects</h1>
+        <h1>Projects</h1>
         <row>
-            <a href="https://www.aaronsidading.com/pregame.html">
-                <div class="col-md-4" id="Project01">
-
+            <a href="../PersonalWebsite/pregame.html">
+                <div class="col-md-6 col-lg-4" id="Project01">
+                    <div class="quote">
+                        <h2>Thruster</h2>
+                        <span class="hover-info"> Hover for more details </span> 
+                        <p>More information about thruster.
+                        <br>
+                        <span style="font-size: 1.2em; color: beige;"> Click for more information </span></p>
+                    </div>
                 </div>
             </a>
             
             <a href="#">
-                <div class="col-md-4" id="Project02">
-
+                <div class="col-md-6 col-lg-4" id="Project02">
+                    <div class="quote">
+                        <h2>Web Dev</h2>
+                        <span class="hover-info"> Hover for more details </span> 
+                        <p> Still under construction! This section will detail the different websites
+                            I'm working on, and what I use to write webpages. </p>
+                    </div>
                 </div>
             </a>
             
             <a href="#">
-                <div class="col-md-4" id="Project03">
-
+                <div class="col-md-6 col-lg-4" id="Project03">
+                    <div class="quote">
+                        <h2>NudeFude</h2>
+                        <span class="hover-info"> Hover for more details </span> 
+                        <p> NudeFude is an Android application designed by ten students of
+                            UCSD. Resembling photo applications such as Instagram, users can upload
+                            photos and display their photos to their peers. This was a great experience
+                            working with other engineers in designing a fully functioning account-based
+                            android application. <br>
+                            <span style="font-size: 1.2em; color: beige;"> Click for more information </span></p>
+                    </div>
                 </div>
             </a>
-        </row>
+
+            <div class="col-md-6 col-lg-4" id="Project04">
+                <div class="quote">
+                    <h2>Thruster</h2>
+                    <span class="hover-info"> Hover for more details </span> 
+                    <p>More information about thruster.
+                    <br>
+                    <span style="font-size: 1.2em; color: beige;"> Click for more information </span></p>
+                </div>
+            </div>
+
+
+            <div class="col-md-6 col-lg-4" id="Project05">
+                <div class="quote">
+                    <h2>Web Dev</h2>
+                    <span class="hover-info"> Hover for more details </span> 
+                    <p> Still under construction! This section will detail the different websites
+                        I'm working on, and what I use to write webpages. </p>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-6 col-lg-4" id="Project06">
+                <div class="quote">
+                    <h2>NudeFude</h2>
+                    <span class="hover-info"> Hover for more details </span> 
+                    <p> NudeFude is an Android application designed by ten students of
+                        UCSD. Resembling photo applications such as Instagram, users can upload
+                        photos and display their photos to their peers. This was a great experience
+                        working with other engineers in designing a fully functioning account-based
+                        android application. <br>
+                        <span style="font-size: 1.2em; color: beige;"> Click for more information </span></p>
+                </div>
+            </div>
+
+        </row> <!--End of Row 1-->
         <div class="content container-fluid" id="Temp-Section">
             <h2> Curious? Let's collaborate</h2>
             <p> Projects are an amazing way for me to learn new languages,

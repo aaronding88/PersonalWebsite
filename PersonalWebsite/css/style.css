@@ -166,29 +166,34 @@ header .navbar.inBody .navbar-nav {
 /** Page Styling **/
 
 .page h1 {
-    font-family: 'Fugaz One', cursive;
+    font-family: 'Abril Fatface', cursive;
 	font-size: 3.5em;
 	text-align: center;
+    text-shadow: 2px 2px 1px black;
     color: goldenrod;
     padding: 10px;
     margin-bottom: 50px;
-    background-color: rgba(50,0,0,0.8);
+    background-color: rgba(100,0,0,0.8);
     border: solid 5px;
     border-radius: 30px
+}
+
+.content {
+    padding: 50px;
 }
 
 .page h2 {
     font-family: 'Abril Fatface', cursive;
     text-align: center;
     color: white;
-    font-size: 2.5em;
-    padding: 25px;
+    font-size: 2em;
+    padding: 10px;
     text-shadow: 3px 3px 3px black;
 }
 
 .page p {
     font-family: 'Poiret One', cursive;
-	font-size: 1.5em;
+	font-size: 1.3em;
 }
 
 .imgBox {
@@ -207,10 +212,15 @@ img.content-example {
     border-radius: 25px
 }
 
+.scroll-box{
+    overflow-x: scroll;
+}
+
 /** Content: About Me **/
 #aboutMe {
     background: url(../img/AboutBanner.png);
     background-position: center 20px;
+    min-height: 800px;
 }
 
 #aboutMe h1{
@@ -220,13 +230,9 @@ img.content-example {
     border: none;
 }
 
-#aboutMe .content {
-    padding: 0 125px
-}
-
 #about-me-banner
 {
-    padding: 7.5% 0;
+    padding: 0px;
 }
 
 #about-me-banner h2{
@@ -236,12 +242,7 @@ img.content-example {
 }
 
 #about-me-banner p{
-    display:none;
-    color: goldenrod;
-    padding: 10px 50px;
-    background-color: rgba(50,0,0,0.8);
-    border: solid 5px;
-    border-radius: 30px;
+    color: black;
 }
 
 #about-me-banner.description-text {
@@ -259,19 +260,21 @@ img.content-example {
 
 .panel-heading{
     padding: 5px 5px 0 5px;
-    background-color: rgba(50,0,0,0.8);
+    background: rgba(100,0,0,1);
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
+    border-bottom: solid 1px white;
 }
-
+.panel-body{
+    padding: 5% 15%;
+    color: beige;
+    background-color: rgba(255,255,255,0.8);
+    border: solid 5px rgb(150,0,0);
+}
 .nav-tabs{
 	border-bottom: none;
 }
 
-.panel-body{
-    color: beige;
-    background-color: rgba(100,0,0,0.8);
-}
 
 /** Panel settings **/
 #aboutMe .nav-tabs > li > a,
@@ -286,14 +289,12 @@ img.content-example {
 #aboutMe .with-nav-tabs.panel-default .nav-tabs > li > a:focus {
     color: beige;
 	background-color: rgb(75,0,0);
-	border-color: transparent;
 }
 #aboutMe .nav-tabs > li.active > a,
 #aboutMe .nav-tabs > li.active > a:hover,
 #aboutMe .nav-tabs > li.active > a:focus {
 	color: #E18942;
-	background-color: rgba(100,0,0,1);
-    border: rgba(100,0,0,1);
+	background-color: rgba(150,0,0,1);
 }
 
 /** Project Styling **/
@@ -302,8 +303,12 @@ img.content-example {
     background: url("../img/Titan-PirateBase.jpg");
 }
 
+#Temp-Section h2{
+    padding-top: 50px;
+}
+
 #Temp-Section p{
-    padding: 30px;
+    padding: 0 100px;
     text-shadow: 1px 1px 1px black;
 }
 
@@ -320,12 +325,15 @@ img.content-example {
 }
 
 #Project01 {
+    padding: 0;
     background: url("../img/hdSpace.jpg");
     background-position: center center;
     height: 500px;
 }
 
+
 #Project02 {
+    padding: 0;
     background: url("../img/Project02.png");
     background-position: center center;
     background-size: auto 500px;
@@ -333,10 +341,71 @@ img.content-example {
 }
 
 #Project03 {
+    padding: 0;
     background: url("../img/NewsFeed.png");
     background-position: center center;
     background-size: 100% auto;
     height: 500px;
+}
+
+#Project04 {
+    padding: 0;
+    background: url("../img/Web-under-construction.jpeg");
+    background-position: center center;
+    height: 500px;
+}
+
+#Project05 {
+    padding: 0;
+    background: url("../img/Web-under-construction.jpeg");
+    background-position: center center;
+    background-size: auto 500px;
+    height: 500px;
+}
+
+#Project06 {
+    padding: 0;
+    background: url("../img/Web-under-construction.jpeg");
+    background-position: center center;
+    background-size: 100% auto;
+    height: 500px;
+}
+
+.quote {
+    background-color: rgba(150,0,0,.3);
+    position: absolute;
+    bottom: 0;
+    width: 75%;
+    font-weight: 400;
+    border-radius: 0 50px 0 0;
+    max-height: 100px;
+    text-align: right;
+}
+
+.quote span.hover-info{
+    color: bisque;
+    font-size: 12px;
+    padding: 0 5px;
+}
+
+.quote p{
+    padding: 0 10px;
+    font-size: 1em;
+    display: none;
+    text-align: left;
+}
+
+.quote:hover {
+    background-color: rgba(150,0,0,.7);
+    max-height: none;
+}
+
+.quote:hover p{
+    display: block;
+}
+
+.quote:hover span.hover-info{
+    display: none;
 }
 
 /** Contact Styling **/

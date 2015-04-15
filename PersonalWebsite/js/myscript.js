@@ -50,7 +50,7 @@ $(function () {
         }
     });
     
-    // When the NavBar hits About Me, add a function to a class.
+    /* When the NavBar hits About Me, add a function to a class.
     $('.navbar-fixed-top').on('activate.bs.scrollspy', function() {
         // Looks for an active "li's" anchor, and stores for the "href" attribute in there.
         var hash = $(this).find('li.active a').attr('href');
@@ -60,7 +60,7 @@ $(function () {
         } else {
             $('#about-me-banner').removeClass('description-text');
         }
-    });
+    }); /*
     
     //Automatically generate carousel indicators
     /* Credit to: Ray Villalobos, Lynda.com */
