@@ -7,6 +7,7 @@ body {
     line-height: 1.75;
     font-size: 2em;
     position: relative;
+    font-family: 'Poiret One', cursive;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -164,6 +165,56 @@ header .navbar.inBody .navbar-nav {
 }*/
 
 /** Page Styling **/
+.banner-textbox-left{
+    position: absolute;
+    left: 10%;
+    top: 25%;
+    max-width: 500px;
+}
+
+.banner-textbox-right{
+    position: absolute;
+    right: 10%;
+    top: 25%;
+    max-width: 500px;
+    text-align: right;
+}
+
+.banner-textbox-center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    max-width: 500px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.banner-textbox p{
+    text-indent: 20%;
+    color: white;
+    font-size: 2em;
+}
+
+.banner-textbox h2{
+    margin-bottom: 50px;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2em;
+    color: skyblue;
+    text-shadow: 1px 1px 5px black;
+}
+
+.banner-textbox p2{
+    color: white;
+    font-size: 1.2em;
+}
+
+.banner-textbox span.subhead {
+    font-family: 'Satisfy', cursive;
+    font-size: 2.25em;
+    color: antiquewhite;
+    text-shadow: 3px 3px 3px black;
+}
+
 
 .page h1 {
     font-family: 'Abril Fatface', cursive;
@@ -210,10 +261,6 @@ img.content-example {
     background-color: rgba(0,0,0,0.5);
     padding: 50px 50px;
     border-radius: 25px
-}
-
-.scroll-box{
-    overflow-x: scroll;
 }
 
 /** Content: About Me **/
@@ -271,6 +318,10 @@ img.content-example {
     background-color: rgba(255,255,255,0.8);
     border: solid 5px rgb(150,0,0);
 }
+
+.panel-body li{
+    color: black;
+}
 .nav-tabs{
 	border-bottom: none;
 }
@@ -326,15 +377,16 @@ img.content-example {
 
 #Project01 {
     padding: 0;
-    background: url("../img/hdSpace.jpg");
+    background: url("../img/ThrusterIcon.jpg");
     background-position: center center;
+    background-size: cover;
     height: 500px;
 }
 
 
 #Project02 {
     padding: 0;
-    background: url("../img/Project02.png");
+    background: url("../img/WebIcon.jpg");
     background-position: center center;
     background-size: auto 500px;
     height: 500px;
@@ -342,7 +394,7 @@ img.content-example {
 
 #Project03 {
     padding: 0;
-    background: url("../img/NewsFeed.png");
+    background: url("../img/NudeFudeIcon.png");
     background-position: center center;
     background-size: 100% auto;
     height: 500px;
@@ -350,14 +402,15 @@ img.content-example {
 
 #Project04 {
     padding: 0;
-    background: url("../img/Web-under-construction.jpeg");
+    background: url("../img/ComingSoonBlue.jpg");
     background-position: center center;
+    background-size: auto 500px;
     height: 500px;
 }
 
 #Project05 {
     padding: 0;
-    background: url("../img/Web-under-construction.jpeg");
+    background: url("../img/ComingSoonYellow.jpg");
     background-position: center center;
     background-size: auto 500px;
     height: 500px;
@@ -365,9 +418,9 @@ img.content-example {
 
 #Project06 {
     padding: 0;
-    background: url("../img/Web-under-construction.jpeg");
+    background: url("../img/ComingSoonRed.jpg");
     background-position: center center;
-    background-size: 100% auto;
+    background-size: auto 500px;
     height: 500px;
 }
 
@@ -375,11 +428,10 @@ img.content-example {
     background-color: rgba(150,0,0,.3);
     position: absolute;
     bottom: 0;
-    width: 75%;
+    width: 35%;
     font-weight: 400;
     border-radius: 0 50px 0 0;
     max-height: 100px;
-    text-align: right;
 }
 
 .quote span.hover-info{
@@ -395,12 +447,21 @@ img.content-example {
     text-align: left;
 }
 
+.quote h2{
+    display: none;
+}
+
 .quote:hover {
     background-color: rgba(150,0,0,.7);
     max-height: none;
+    width: 75%;
 }
 
 .quote:hover p{
+    display: block;
+}
+
+.quote:hover h2{
     display: block;
 }
 
@@ -438,6 +499,12 @@ footer {
     padding: 50px 0;
 }
 
+/** Thruster Page Styling **/
+
+#Thruster-intro{
+    color: white;
+    background: url("/img/hdSpace.jpg");
+}
 /** Introduction **
 .intro {
 	font-family: 'Titillium Web', sans-serif;

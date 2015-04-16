@@ -54,9 +54,35 @@
         </ol>
         
         <div class="carousel-inner fullheight">
-            <div class="item active"><img class="BannerImages" src="img/FeaturedBanner_01.jpg" alt="Banner_01"></div>
-            <div class="item"><img src="img/FeaturedBanner_02.jpg" alt="Banner_02" ></div>
-            <div class="item"><img src="img/FeaturedBanner_03.jpg" alt="Banner_03"></div>
+            <div class="item active">
+                <img class="BannerImages" src="img/FeaturedBanner_01.jpg" alt="Banner_01">
+                <div class="banner-textbox banner-textbox-left container">
+                    <p> Hi, I'm <br>
+                    <span class="subhead">Aaron Ding.</span> </p>
+                    <p2>This is my personal website, where you can see projects, announcements,
+                        and updates by me. There are still elements that are under construction,
+                        so keep checking back to see the changes.</p2>
+                </div><!--End of banner-textbox-left-->
+            </div> <!--End of First Carousel item-->
+            <div class="item"><img src="img/FeaturedBanner_02.jpg" alt="Banner_02" >
+                <div class="banner-textbox banner-textbox-right container">
+                    <h2>Play Thruster!</h2>
+                    <p2>Thruster is now playable! Click <a href="pregame.html">here</a>
+                        to test out the game. I am always seeking feedback, so please
+                        let me know what works and what doesn't.</p2>
+                </div> <!--End of banner-textbox-right-->
+            </div> <!--End of Second Carousel item-->
+            <div class="item"><img src="img/FeaturedBanner_03.jpg" alt="Banner_03">
+                <div class="banner-textbox banner-textbox-center container">
+                    <h2> Bootstrap, Lynda, and quitting my job.</h2>
+                    <p2> Curious how I made this webpage? Want to learn how?
+                         I used resources like <a href="http://getbootstrap.com/">Bootstrap</a>, 
+                         <a href="http://www.lynda.com/default.aspx">Lynda.com</a>, and a lot of free time
+                         to write this website. If you're interested in
+                         making, or having someone make you, a website, please
+                         feel free to <a href="#contact">contact me</a>!</p2>
+                </div> <!--End of banner-textbox-right-->
+            </div>
         </div> <!--carousel-inner-->
         
         <!--Carousel user navigation controls, utilizing an icon. Data-slide refers to JavaScript commands-->
@@ -89,8 +115,8 @@
                         </ul>
                 </div>
                 <div class="panel-body">
-                    <div class="tab-content" style="overflow:scroll;">
-                        <div class="scroll-box tab-pane fade" id="tab1default">
+                    <div class="tab-content">
+                        <div class="tab-pane fade" id="tab1default">
                             <p> Welcome to my section of the internet.
                                 I'm an Asian American software developer with
                                 experience with media arts, game developement,
@@ -101,11 +127,64 @@
                                 any purpose! I'm always interested in chatting with new
                                 people.</p>
                         </div>
-                        <div class="tab-pane fade" id="tab2default"> 
-                            <p>A handful.</p>
-                        </div>
+                        <div class="tab-pane fade" id="tab2default">
+                            <row>
+                                <p> This section is still under construction, so please be
+                                    patient while I set things up! The following languages are
+                                    ones that I commonly use for my work.</p>
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>C#</li>                                        
+                                        <li>C++</li>
+                                        <li>Java</li>
+                                        <li>Swift</li>
+                                    </ul>
+                                    </div> <!--End of column-->
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>C</li>
+                                        <li>HTML</li>
+                                        <li>Javascript</li>
+                                    </ul>
+                                </div> <!--End of column-->
+                            </row>
+                        </div> <!--End of second tab-->
                         <div class="tab-pane fade" id="tab3default"> 
-                            <p>Video games.</p>
+                            <p> This section is still under construction, so please be
+                                patient while I set things up!</p>
+                            <row>
+                                <div class="col-md-4">
+                                    <p>Coding</p>
+                                    <ul>
+                                        <li> Eclipse </li>
+                                        <li> Android SDK</li>
+                                        <li> Xcode</li>
+                                        <li> Unity</li>
+                                    </ul>
+                                </div> <!--End of column 1-->
+                                
+                                <div class="col-md-4">
+                                    <p>Media</p>
+                                    <ul>
+                                        <li> Adobe Premiere </li>
+                                        <li> Adobe Photoshop</li>
+                                        <li> Adobe After Effects</li>
+                                        <li> Audacity</li>
+                                        <li> Finale</li>
+                                        <li> Logic Pro X</li>
+                                    </ul>
+                                </div> <!--End of column 2-->
+                                
+                                <div class="col-md-4">
+                                    <p>Creatives</p>
+                                    <ul>
+                                        <li> Starcraft II Editor </li>
+                                        <li> Warcraft Editor</li>
+                                        <li> RPG Maker</li>
+                                        <li> Tiled</li>
+                                    </ul>
+                                </div> <!--End of column 2-->
+                            </row>
                         </div>
                     </div>
                 </div>
@@ -120,19 +199,19 @@
     <div class="page container-fluid" id="Projects">
         <h1>Projects</h1>
         <row>
-            <a href="../PersonalWebsite/pregame.html">
+            <a href="pregame.html">
                 <div class="col-md-6 col-lg-4" id="Project01">
                     <div class="quote">
                         <h2>Thruster</h2>
                         <span class="hover-info"> Hover for more details </span> 
-                        <p>More information about thruster.
+                        <p> Thruster is a simple 2D, sidescrolling bullet-dodge game. The objective is to stay
+                            alive as long as you can, 
                         <br>
-                        <span style="font-size: 1.2em; color: beige;"> Click for more information </span></p>
+                        <span style="font-size: 1.2em; color: beige;"> Click to play! </span></p>
                     </div>
                 </div>
             </a>
-            
-            <a href="#">
+            <!--Web Development Section. Special thanks to http://imgarcade.com/1/website-development-services-icon/ for icons-->
                 <div class="col-md-6 col-lg-4" id="Project02">
                     <div class="quote">
                         <h2>Web Dev</h2>
@@ -141,7 +220,6 @@
                             I'm working on, and what I use to write webpages. </p>
                     </div>
                 </div>
-            </a>
             
             <a href="#">
                 <div class="col-md-6 col-lg-4" id="Project03">
@@ -153,28 +231,25 @@
                             photos and display their photos to their peers. This was a great experience
                             working with other engineers in designing a fully functioning account-based
                             android application. <br>
-                            <span style="font-size: 1.2em; color: beige;"> Click for more information </span></p>
+                            <span style="font-size: 1.2em; color: beige;"> Click to see the video demo </span></p>
                     </div>
                 </div>
             </a>
 
             <div class="col-md-6 col-lg-4" id="Project04">
                 <div class="quote">
-                    <h2>Thruster</h2>
+                    <h2>To be added</h2>
                     <span class="hover-info"> Hover for more details </span> 
-                    <p>More information about thruster.
-                    <br>
-                    <span style="font-size: 1.2em; color: beige;"> Click for more information </span></p>
+                    <p> More project information to come. Check back later!</p>
                 </div>
             </div>
 
 
             <div class="col-md-6 col-lg-4" id="Project05">
                 <div class="quote">
-                    <h2>Web Dev</h2>
+                    <h2>To be added</h2>
                     <span class="hover-info"> Hover for more details </span> 
-                    <p> Still under construction! This section will detail the different websites
-                        I'm working on, and what I use to write webpages. </p>
+                    <p> More project information to come. Check back later! </p>
                 </div>
             </div>
 
@@ -182,14 +257,9 @@
 
             <div class="col-md-6 col-lg-4" id="Project06">
                 <div class="quote">
-                    <h2>NudeFude</h2>
+                    <h2>To be added</h2>
                     <span class="hover-info"> Hover for more details </span> 
-                    <p> NudeFude is an Android application designed by ten students of
-                        UCSD. Resembling photo applications such as Instagram, users can upload
-                        photos and display their photos to their peers. This was a great experience
-                        working with other engineers in designing a fully functioning account-based
-                        android application. <br>
-                        <span style="font-size: 1.2em; color: beige;"> Click for more information </span></p>
+                    <p> More project information to come. Check back later! </p>
                 </div>
             </div>
 
@@ -206,7 +276,7 @@
     </div> <!--page container-fluid-->
     </section> <!--End of Project Section-->
     
-    <!-- Contact section. Should include a fillable form. -->
+    <!-- Contact section. -->
     <section>
 	<div class="page container" id="contact">
         <h1>
@@ -244,7 +314,7 @@
         <div class="container-fluid">
             <p> Coded by Aaron Sida Ding using HTML, CSS, Javascript.</p>
             <p> Special thanks to Ray Villalobos of Lynda.com, and Bootstrap community</p>
-	        <p>Copyright Aaron Sida Ding. If you would like to borrow elements, just let me know!</p>
+	        <p> Stock images provided by: PicJumbo.com </p>
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
