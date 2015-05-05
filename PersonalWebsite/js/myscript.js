@@ -64,10 +64,10 @@ $(function () {
     
     //Automatically generate carousel indicators
     /* Credit to: Ray Villalobos, Lynda.com */
-    for (var i=0; i < slideqty; i++) {
+/*    for (var i=0; i < slideqty; i++) {
     var insertText = '<li data-target="#main" data-slide-to="' + i + '"></li>';
     $('#main ol').append(insertText);
-  }
+  }*/
     
     // Settings for the carousel.
     $('.carousel').carousel({

@@ -1,5 +1,8 @@
 <!DOCTYPE html>
     <html lang="en">
+        
+    <!-- CREDITS -->
+    <!--Circle Icon Pack by Martz90 (Via DeviantArt)-->
 
     <head>
     	<meta charset="utf-8">
@@ -27,7 +30,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#main"> 
-                    <h1>Aaron Ding <span class="subhead">Personal Website</span></h1>
+                    <h1>Aaron Ding</h1>
                 </a>
             </div> <!--navbar-header-->
 
@@ -50,8 +53,9 @@
     <!-- Carousel slider, with the ID of main. Contains the images. Bootstrap div classes control functionality. -->
     <div class="carousel slide" data-ride="carousel" id="main">
         
-        <ol class="carousel-indicators">
+<!--    <ol class="carousel-indicators">
         </ol>
+        ** Removed: Do not like the visual ** -->
         
         <div class="carousel-inner fullheight">
             <div class="item active">
@@ -60,8 +64,7 @@
                     <p> Hi, I'm <br>
                     <span class="subhead">Aaron Ding.</span> </p>
                     <p2>This is my personal website, where you can see projects, announcements,
-                        and updates by me. There are still elements that are under construction,
-                        so keep checking back to see the changes.</p2>
+                        and updates by me.</p2>
                 </div><!--End of banner-textbox-left-->
             </div> <!--End of First Carousel item-->
             <div class="item"><img src="img/FeaturedBanner_02.jpg" alt="Banner_02" >
@@ -79,7 +82,7 @@
                          I used resources like <a href="http://getbootstrap.com/">Bootstrap</a>, 
                          <a href="http://www.lynda.com/default.aspx">Lynda.com</a>, and a lot of free time
                          to write this website. If you're interested in
-                         making, or having someone make you, a website, please
+                         making, or having someone make you, a website,
                          feel free to <a href="#contact">contact me</a>!</p2>
                 </div> <!--End of banner-textbox-right-->
             </div>
@@ -97,98 +100,38 @@
 
     <!-- About Me section, which contains only one container, plus header. -->
     <section>
-	<div class="page container-fluid" id="aboutMe">
-        <div class="container" id="about-me-banner">
-                <div class="panel-heading">
-                        <div class="container-fluid">
-                            <h1>About Me</h1>
-                        </div>
-                        <ul class="nav nav-tabs">
-                            <li><a href="#tab1default" data-toggle="tab">
-                                <h2>Introduction</h2>
-                                </a></li>
-                            <li><a href="#tab2default" data-toggle="tab">
-                                <h2>Coding Languages</h2>
-                                </a></li>
-                            <li><a href="#tab3default" data-toggle="tab">
-                                <h2>Software Proficiencies</h2></a></li>
-                        </ul>
-                </div>
-                <div class="panel-body">
-                    <div class="tab-content">
-                        <div class="tab-pane fade" id="tab1default">
-                            <p> Welcome to my section of the internet.
-                                I'm an Asian American software developer with
-                                experience with media arts, game developement,
-                                music theatre, and front-end iOS and Web development. </p>
-                            <p> I wanted to create this webite for the purposes of 
-                                publicly displaying my projects and searching for potential
-                                partners in projects. However, feel free to contact me for
-                                any purpose! I'm always interested in chatting with new
-                                people.</p>
-                        </div>
-                        <div class="tab-pane fade" id="tab2default">
-                            <row>
-                                <p> This section is still under construction, so please be
-                                    patient while I set things up! The following languages are
-                                    ones that I commonly use for my work.</p>
-                                <div class="col-md-6">
-                                    <ul>
-                                        <li>C#</li>                                        
-                                        <li>C++</li>
-                                        <li>Java</li>
-                                        <li>Swift</li>
-                                    </ul>
-                                    </div> <!--End of column-->
-                                <div class="col-md-6">
-                                    <ul>
-                                        <li>C</li>
-                                        <li>HTML</li>
-                                        <li>Javascript</li>
-                                    </ul>
-                                </div> <!--End of column-->
-                            </row>
-                        </div> <!--End of second tab-->
-                        <div class="tab-pane fade" id="tab3default"> 
-                            <p> This section is still under construction, so please be
-                                patient while I set things up!</p>
-                            <row>
-                                <div class="col-md-4">
-                                    <p>Coding</p>
-                                    <ul>
-                                        <li> Eclipse </li>
-                                        <li> Android SDK</li>
-                                        <li> Xcode</li>
-                                        <li> Unity</li>
-                                    </ul>
-                                </div> <!--End of column 1-->
-                                
-                                <div class="col-md-4">
-                                    <p>Media</p>
-                                    <ul>
-                                        <li> Adobe Premiere </li>
-                                        <li> Adobe Photoshop</li>
-                                        <li> Adobe After Effects</li>
-                                        <li> Audacity</li>
-                                        <li> Finale</li>
-                                        <li> Logic Pro X</li>
-                                    </ul>
-                                </div> <!--End of column 2-->
-                                
-                                <div class="col-md-4">
-                                    <p>Creatives</p>
-                                    <ul>
-                                        <li> Starcraft II Editor </li>
-                                        <li> Warcraft Editor</li>
-                                        <li> RPG Maker</li>
-                                        <li> Tiled</li>
-                                    </ul>
-                                </div> <!--End of column 2-->
-                            </row>
-                        </div>
+	<div class="container-fluid" id="aboutMe">
+        <div class="page container">
+            <h1> About Me </h1>
+            <hr>
+            <div class="content container">
+                <div class="row">
+                    <div class="col-md-2">
                     </div>
-                </div>
-        </div> <!--Container: about-me-banner-->  
+                    <div class="col-md-2">
+                        <img src="img/AboutMeIcon.png" class="centered-img" id="aboutMeIcon">
+                    </div>
+                    <div class="col-md-6">
+                        <p> Welcome to my section of the internet. I'm an Asian American software developer with experience 
+                            with media arts, game development, music theatre, and front-end Web development.
+                        </p>
+                        <p> I'm an unorthodox player in a field of many already extremely talented
+                            developers. My passion is
+                            in learning and creating, preferably with other passionate people. </p>
+                        <br>
+                        <p> And since you're here, that's probably you.
+                        </p>
+                    </div>
+                </div> <!--Row: End-->
+            </div> <!--Content Container: End-->
+            <hr>
+            <div class="container centered-text">
+                <h2> Download Resume</h2>
+                <a href="files/BlizzardResume_AaronDing.pdf">
+                    <img src="img/notepad.png" style="max-height: 64px;">
+                </a>
+            </div>
+        </div> <!--Page Container: End-->
     </div> <!--Container-fluid: About Me-->
     
     </section> <!--End of About Me Section-->
@@ -198,111 +141,88 @@
 	<section>
     <div class="page container-fluid" id="Projects">
         <h1>Projects</h1>
-        <row>
-            <a href="pregame.html">
-                <div class="col-md-6 col-lg-4" id="Project01">
-                    <div class="quote">
-                        <h2>Thruster</h2>
-                        <span class="hover-info"> Hover for more details </span> 
-                        <p> Thruster is a simple 2D, sidescrolling bullet-dodge game. The objective is to stay
-                            alive as long as you can, 
-                        <br>
-                        <span style="font-size: 1.2em; color: beige;"> Click to play! </span></p>
+        <hr>
+        <div class="content centered-text container-fluid">
+            <row>
+                <div class="col-md-8 col-md-offset-2">
+                    <p> These are a few of my projects that I've done. Click on the images for more info.</p>
+                </div>
+            </row> <!--End of Row-->
+        </div>
+        <div class="portfolio container">
+            <row>
+                <a href="pregame.html">
+                    <div class="col-md-4" id="Project01">
+                        <div class="project-description">
+                            <h2> Thruster </h2>
+                            <p> Description: <br>A 2D sidescrolling game developed in Unity.
+                                Currently in development, and planned to release on iOS.</p>
+                            <p> Skills developed:<br> Game design, C#, Unity Program, Artist
+                                management, deadline management.</p>
+                            <p> Click to play the early alpha!</p>
+                        </div> <!--End of Project Description-->
+                    </div> <!--End of Column-->
+                </a> <!--End of anchor reference-->
+                <a href="https://youtu.be/rHJmvvxaObY">
+                    <div class="col-md-4" id="Project02">
+                        <div class="project-description">
+                            <h2> NudeFude </h2>
+                            <p> Description: <br>An Android app designed for users to broadcast
+                                their favorite images of dishes, and compile a list of favorites.</p>
+                            <p> Skills developed:<br> Android SDK, XML, MVC pattern, Agile workflow
+                                system architecture, SQL.</p>
+                            <p style="rgb(0,50,60);"> Click to watch demo video!</p>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <!--Web Development Section. Special thanks to http://imgarcade.com/1/website-development-services-icon/ for icons-->
-                <div class="col-md-6 col-lg-4" id="Project02">
-                    <div class="quote">
-                        <h2>Web Dev</h2>
-                        <span class="hover-info"> Hover for more details </span> 
-                        <p> Still under construction! This section will detail the different websites
-                            I'm working on, and what I use to write webpages. </p>
+                </a>
+                <a href="https://youtu.be/F78EJxHnkWI?t=26s">
+                    <div class="col-md-4" id="Project03">
+                        <div class="project-description">
+                            <h2> Gypsy </h2>
+                            <p> Description: <br>U.C. San Diego's Muir Musical's annual 
+                                student-run production of Gypsy.</p>
+                            <p> Skills developed:<br> Communication, large-scale leadership,
+                                business and artistic skills, stage directing.</p>
+                            <p> Click to watch an interview for Gypsy!</p>
+                        </div>
                     </div>
-                </div>
-            
-            <a href="#">
-                <div class="col-md-6 col-lg-4" id="Project03">
-                    <div class="quote">
-                        <h2>NudeFude</h2>
-                        <span class="hover-info"> Hover for more details </span> 
-                        <p> NudeFude is an Android application designed by ten students of
-                            UCSD. Resembling photo applications such as Instagram, users can upload
-                            photos and display their photos to their peers. This was a great experience
-                            working with other engineers in designing a fully functioning account-based
-                            android application. <br>
-                            <span style="font-size: 1.2em; color: beige;"> Click to see the video demo </span></p>
-                    </div>
-                </div>
-            </a>
-
-            <div class="col-md-6 col-lg-4" id="Project04">
-                <div class="quote">
-                    <h2>To be added</h2>
-                    <span class="hover-info"> Hover for more details </span> 
-                    <p> More project information to come. Check back later!</p>
-                </div>
-            </div>
-
-
-            <div class="col-md-6 col-lg-4" id="Project05">
-                <div class="quote">
-                    <h2>To be added</h2>
-                    <span class="hover-info"> Hover for more details </span> 
-                    <p> More project information to come. Check back later! </p>
-                </div>
-            </div>
-
-
-
-            <div class="col-md-6 col-lg-4" id="Project06">
-                <div class="quote">
-                    <h2>To be added</h2>
-                    <span class="hover-info"> Hover for more details </span> 
-                    <p> More project information to come. Check back later! </p>
-                </div>
-            </div>
-
-        </row> <!--End of Row 1-->
-        <div class="content container-fluid" id="Temp-Section">
-            <h2> Curious? Let's collaborate</h2>
-            <p> Projects are an amazing way for me to learn new languages,
-                workflows, and styles. I am ambitious with how many projects
-                I undertake, and how complex it can be. Consequently, I am always
-                enthusiastic about teaming up on current or new ideas. Feel free
-                to reach out to me through any means in the contact section.</p>
-        </div> <!--Container-fluid: End of Temp Section-->
-
+                </a>
+            </row>
+        </div>
     </div> <!--page container-fluid-->
+        
+    <!--Test Section-->
+    
     </section> <!--End of Project Section-->
     
     <!-- Contact section. -->
     <section>
-	<div class="page container" id="contact">
+	<div class="page container-fluid" id="contact">
         <h1>
         	Contact Me!
         </h1>
-        <div class="content container">
-            <p> Feedback is important to me. If you have any questions about projects
-                or how I did something, or just have comments, feel free to reach out
-                to me. Even if it's mean!</p>
+        <hr>
+        <div class="centered-text content container">
+            <h2> Curious? Inspired? Collaborate!</h2>
+            <p> Shoot me a line! </p>
         </div>
+        
         <div class="container" style="text-align: center;" id="contact-container">
             <row class>
                 <a href="mailto:aaronding88@gmail.com">
                     <div class="contact-method col-xs-4">
-                        <img src="img/emailIcon.png" alt="Email icon" style="height: 50px;">
+                        <img src="img/gmail.png" alt="Email icon" style="height: 50px;">
                         <p> Email </p>
                     </div>
                 </a>
-                <a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile">
+                <a href="http://www.linkedin.com/in/aaronding88">
                     <div class="contact-method col-xs-4">
-                        <img src="img/In-2C-66px-TM.png" alt="LinkedIn Link" style="height: 50px;">
+                        <img src="img/linkedin.png" alt="LinkedIn Link" style="height: 50px;">
                         <p> LinkedIn </p>
                     </div>
                 </a>
                 <div class="col-xs-4">
-                    <img src="img/phoneIcon.png" alt="Phone Icon" style="height: 50px;">
+                    <img src="img/phone.png" alt="Phone Icon" style="height: 50px;">
                     <p> 916.531.2006 </p>
                 </div>
             </row> <!--Row end-->
