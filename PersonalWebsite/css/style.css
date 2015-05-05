@@ -3,6 +3,7 @@
 /** Default CSS page **/
 
 body {
+    color: white;
     font-weight: 700;
     line-height: 1.75;
     font-size: 2em;
@@ -10,139 +11,23 @@ body {
     font-family: 'Poiret One', cursive;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-
-/** Header Navigation **/
-header .navbar {
-    padding: 15px 0 25px 0;
-    transition: all .5s ease-out;
-}
-
-header .navbar-default {
-    background-color: transparent;
-    border: none;
-}
-
-header .navbar-default .navbar-nav a,
-header .navbar-default .navbar-nav a:focus{
+h1 {
     font-family: 'Poiret One', cursive;
-    background: transparent;
-    color: white;
-    padding: 10px 15px;
-}
-
-
-header .navbar-default .navbar-nav a:hover {
-    color: lightgoldenrodyellow;
-    background: transparent;
-}
-
-header .navbar-default .navbar-nav .active a {
-    font-weight:900;
-    color: #E18942;
-    background: transparent;
-    border-bottom: 4px solid #E18942;
+	font-size: 3.5em;
+	text-align: center;
     text-shadow: none;
 }
 
-header .navbar-default .navbar-nav .active a:active,
-header .navbar-default .navbar-nav .active a:focus{
-    font-weight:900;
-    color: #E18942;
-    background: transparent;
-    border-bottom: 4px solid #E18942;
-    text-shadow: none;
-}
-
-header .navbar-default .navbar-nav .active a:hover{
-    color: peachpuff;
-    background: transparent;
-    text-shadow: none;
-}
-
-header img.BannerImages {
-    width:100%;
-}
-
-/** NavBar Brand **/
-
-header .navbar-brand {
-    margin-top: -15px;
-    padding-left: 50px;
-}
-
-
-header .navbar-brand h1 {
-    color: white;
-    font-family: 'Satisfy', cursive;
-    font-size: 2em;
-    text-align: center;
-    display:none;
-}
-
-
-/** Mobile NavBar Toggle **/
-
-header .navbar-toggle{
-    background-color: rgb(0,50,60);
-}
-
-header .navbar-default .navbar-toggle .icon-bar {
-    background-color: white;
-}
-
-/** Adjustments **/
-
-
-/** NavBar inBody **/
-header .inBody {
-    background: rgb(0,50,60);
-}
-
-header .navbar.inBody {
-    padding-top: 0px;
-    padding-bottom:0px;
-}
-
-header .navbar.inBody h1 {
-    display: block;
-    font-size: 1.5em;
+hr {
+    border-color: rgb(0,129,160);
     background: none;
+    width: 20%;
+    height: 3px;
 }
-header .inBody .navbar-brand {
-    margin-top: 0px;
-}
-
-header .inBody .navbar-brand span.subhead {
-  display: none;
-}
-
-header .navbar.inBody .navbar-nav {
-    padding-top: 10px;   
-}
-
-/** Carousel Styling **/
-
-#main .item {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 100%;
-    height: 100%;
-}
-
-/* Still to be sorted 
-.section {
-    padding: 0 10%;   
-}
-
-
-.fontChange {
-	font-family: 'Poiret One', cursive;
-}*/
 
 /** Page Styling **/
 .banner-textbox-left{
@@ -199,50 +84,16 @@ header .navbar.inBody .navbar-nav {
     color: antiquewhite;
     text-shadow: 3px 3px 3px black;
 }
-
-hr {
-    border-color: rgb(0,129,160);
-    background: none;
-    width: 20%;
-    height: 3px;
-}
-/** Page styling **/
-.page {
-    color: white;
-}
-
 .centered-text{
     text-align: center;
     margin: 0 auto;
-}
-
-.page h1 {
-    font-family: 'Poiret One', cursive;
-	font-size: 3.5em;
-	text-align: center;
-    text-shadow: none;
-}
-
-.content {
-    text-shadow: none;
-}
-
-.centered-img{
-    position: absolute;
-    left: 50%;
-    top: 200px;
-    transform: translate(-50%, 0;)
-    /** Browser compatibility **/
-        -ms-transform: translate(-50%,0);
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%,0);
-        -o-transform: translate(-50%,0);
 }
 
 .page h2 {
     text-align: center;
     font-size: 1.5em;
     padding: 10px;
+    margin-bottom: 25px;
 }
 
 .page p {
@@ -262,9 +113,134 @@ img.content-example {
     border-radius: 25px
 }
 
+.portfolio {
+    border: solid 5px white;
+}
+
+.page {
+    padding: 50px 0;
+}
+
+.contact-method {
+    color: white;
+    border-right: groove 1px rgba(255,255,255,0.8);
+}
+
+/** Header Navigation **/
+header .navbar {
+    padding: 15px 0 25px 0;
+    transition: all .5s ease-out;
+}
+
+header .navbar-default {
+    background-color: transparent;
+    border: none;
+}
+
+header .navbar-default .navbar-nav a,
+header .navbar-default .navbar-nav a:focus{
+    font-family: 'Poiret One', cursive;
+    background: transparent;
+    color: white;
+    padding: 10px 15px;
+}
+
+
+header .navbar-default .navbar-nav a:hover {
+    color: lightgoldenrodyellow;
+    background: transparent;
+}
+
+header .navbar-default .navbar-nav .active a {
+    font-weight:900;
+    color: #E18942;
+    background: transparent;
+    border-bottom: 4px solid #E18942;
+    text-shadow: none;
+}
+
+header .navbar-default .navbar-nav .active a:active,
+header .navbar-default .navbar-nav .active a:focus{
+    font-weight:900;
+    color: #E18942;
+    background: transparent;
+    border-bottom: 4px solid #E18942;
+    text-shadow: none;
+}
+
+header .navbar-default .navbar-nav .active a:hover{
+    color: peachpuff;
+    background: transparent;
+    text-shadow: none;
+}
+
+/** NavBar Brand **/
+
+header .navbar-brand {
+    margin-top: -15px;
+    padding-left: 50px;
+}
+
+
+header .navbar-brand h1 {
+    color: white;
+    font-family: 'Satisfy', cursive;
+    font-size: 2em;
+    text-align: center;
+    display:none;
+}
+
+
+/** Mobile NavBar Toggle **/
+
+header .navbar-toggle{
+    background-color: rgb(0,50,60);
+}
+
+header .navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+/** NavBar inBody **/
+header .inBody {
+    background: rgb(0,50,60);
+}
+
+header .navbar.inBody {
+    padding-top: 0px;
+    padding-bottom:0px;
+}
+
+header .navbar.inBody h1 {
+    display: block;
+    font-size: 1.5em;
+    background: none;
+}
+header .inBody .navbar-brand {
+    margin-top: 0px;
+}
+
+header .inBody .navbar-brand span.subhead {
+  display: none;
+}
+
+header .navbar.inBody .navbar-nav {
+    padding-top: 10px;   
+}
+
+/** Carousel Styling **/
+
+#main .item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+
 /** Content: About Me **/
 #aboutMe {
-    padding: 50px;
     background: rgb(50,50,50);
     background-size: cover;
     background-position: center;
@@ -275,10 +251,11 @@ img.content-example {
 }
 
 /** Project Styling **/
-.portfolio {
-    padding: 50px;
+#Projects{
+    color: black;
 }
-.project-description{
+
+#Projects .project-description{
     color: transparent;
     background-color: rgb(0,125,160);
     opacity: 0;
@@ -289,20 +266,21 @@ img.content-example {
     -webkit-transition: opacity 0.3s ease-in-out;
     height: 400px;
 }
-.project-description:hover{
+#Projects .project-description:hover{
     opacity: 0.8;
     color: white;
     transition: opacity 0.3s ease-in-out;
     -moz-transition: opacity 0.3s ease-in-out;
     -webkit-transition: opacity 0.3s ease-in-out;
 }
-.project-description p{
+#Projects .project-description p{
     font-size: 0.8em
 }
-#Projects{
-    padding: 25px 0;
-    color: black;
+
+#Projects .project-description h2 {
+    margin-bottom: 15px;
 }
+
 
 #Project01{
     background-image: url(../img/ThrusterIcon.jpg);
@@ -322,60 +300,18 @@ img.content-example {
     background-size: cover;
 }
 
-.quote {
-    background-color: rgba(150,0,0,.3);
-    position: absolute;
-    bottom: 0;
-    width: 35%;
-    font-weight: 400;
-    border-radius: 0 50px 0 0;
-    max-height: 100px;
-}
-
-.quote span.hover-info{
-    color: bisque;
-    font-size: 12px;
-    padding: 0 5px;
-}
-
-.quote p{
-    padding: 0 10px;
-    font-size: 1em;
-    display: none;
-    text-align: left;
-}
-
-.quote h2{
-    display: none;
-}
-
-.quote:hover {
-    background-color: rgba(150,0,0,.7);
-    max-height: none;
-    width: 75%;
-}
-
-.quote:hover p{
-    display: block;
-}
-
-.quote:hover h2{
-    display: block;
-}
-
-.quote:hover span.hover-info{
-    display: none;
-}
 
 /** Contact Styling **/
 
-.contact-method {
-    color: white;
-    border-right: groove 1px rgba(255,255,255,0.8);
-}
-
 #contact {
     background-color: rgb(0,100,120);
+}
+#contact .centered-text h2 {
+    margin: 0;
+}
+
+#contact .centered-text p {
+    font-size: 1.2em;
 }
 
 #contact-container {
@@ -397,10 +333,6 @@ footer {
 	text-align: center;
     line-height: 0.5;
     padding: 15px;
-}
-
-.page {
-    padding: 50px 0;
 }
 
 /** Thruster Page Styling **/
