@@ -300,6 +300,12 @@ header .navbar.inBody .navbar-nav {
     background-size: cover;
 }
 
+#Project04{
+    background-image: url(../img/Wiseaudio.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
 
 /** Contact Styling **/
 
